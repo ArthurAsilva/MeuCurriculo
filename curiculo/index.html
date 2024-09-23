@@ -5,21 +5,47 @@
   <title>curiculo</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/estilo.css">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     .navbar-brand {
-      color: gold; /* Cor personalizada para "Arthur André Prado da Silva" */
+      color: gold;
     }
 
-    .nav-link.habilidades {
-      color: gold; /* Cor personalizada para "habilidades" */
+    .nav-link {
+      color: gold;
     }
 
-    .nav-link.capacidades {
-      color: gold; /* Cor personalizada para "capacidades" */
+    .nav-link:hover {
+      color: white; /* Muda a cor ao passar o mouse */
+      text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
     }
 
-    .nav-link.sobre-mim {
-      color: gold; /* Cor personalizada para "sobre mim" */
+    .card-custom {
+      border: 2px solid gold;
+      border-radius: 0.25rem;
+      box-shadow: 1.2 4px 8px rgba(167, 167, 167, 0.733);
+      margin: 20px auto;
+      max-width: 1200px;
+      background-color: gray;
+    }
+
+    .card-description {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .card-img-top {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -34,120 +60,133 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link habilidades" aria-current="page" href="#">| habilidades |</a>
+          <a class="nav-link habilidades" aria-current="page" href="#habilidades">| habilidades |</a>
         </li>
         <li class="nav-item"> 
-          <a class="nav-link capacidades" href="#">| capacidades |</a>
+          <a class="nav-link capacidades" href="#capacidades">| capacidades |</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link sobre-mim" href="#">| sobre mim |</a>
+          <a class="nav-link sobre-mim" href="#sobre-mim">| sobre mim |</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .card-custom {
-      border: 2px solid white; /* Borda branca de 2px */
-      border-radius: 0.25rem; /* Arredondamento opcional para os cantos */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
-      margin: 20px auto; /* Centraliza o card horizontalmente */
-      max-width: 300px; /* Largura máxima do card */
-    }
-
-    .card-description {
-      text-align: center; /* Alinha o texto ao centro */
-      margin-top: 10px; /* Espaço acima do texto */
-    }
-  </style>
-</head>
-<body>
-
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .card-custom {
-      border: 2px solid gold; /* Borda branca de 2px */
-      border-radius: 0.25rem; /* Arredondamento opcional para os cantos */
-      box-shadow: 1.2 4px 8px rgba(167, 167, 167, 0.733); /* Sombra opcional */
-      margin: 20px auto; /* Centraliza o card horizontalmente */
-      max-width: 1200px; /* Largura máxima do card */
-      background-color: gray;
-    }
-
-    .card-description {
-      text-align: center; /* Alinha o texto ao centro */
-      margin-top: 10px; /* Espaço acima do texto */
-    }
-
-    .card-img-top {
-      max-width: 100%; /* Faz com que a imagem ocupe 100% da largura do card */
-      height: auto; /* Mantém a proporção da imagem */
-    }
-  </style>
-</head>
-<body>
 
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12">
-      <div class="card card-custom">
+      <div class="card card-custom" id="sobre-mim">
         <img src="https://via.placeholder.com/1200x800" class="card-img-top" alt="Imagem do Card">
         <div class="card-body">
-          <h1 class="card-title">sobre mim</h1>
-          <p class="card-text"> </p>
+          <h1 class="card-title">Sobre Mim</h1>
+          <p class="card-description">Olá, meu nome é Arthur André, tenho 15 anos, nasci no dia 12/05/2009. Sou estudante da ETEC de Ribeirão Pires e curso T.I. (Técnico em Informática).</p>
         </div>
-        <div class="card-description">
-          <p>Olá meu nome Arthur Andre, tenho 15 anos nasci no dia 12/05/2009 sou estudante da ETEC de Ribeirão Pires e curso para T.I(tecnico para informatica)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4" id="capacidades">
+    <div class="col">
+      <div class="card" style="background-color: rgb(65, 65, 65); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
+        <img src="img/cropped-logo-etec.png" class="card-img-top" alt="ETEC" style="border: 2px solid yellow; width: 30%;">
+        <div class="card-body" style="padding: 0.5rem;">
+          <h5 class="card-title">ETEC</h5>
+          <p class="card-text">Escola técnica e média, com vasta opção de cursos. Escolhi T.I.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: rgb(58, 57, 57); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
+        <img src="img/30102354_490294_GD.jpg" class="card-img-top" alt="Proerd" style="border: 2px solid yellow; width: 30%;">
+        <div class="card-body" style="padding: 0.5rem;">
+          <h5 class="card-title">Proerd</h5>
+          <p class="card-text">Programa a favor da conscientização e de não usar drogas, passado no quinto ano de algumas escolas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: rgb(77, 76, 76); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
+        <img src="img/121.png" class="card-img-top" alt="Wizard" style="border: 2px solid yellow; width: 30%;">
+        <div class="card-body" style="padding: 0.5rem;">
+          <h5 class="card-title">Wizard</h5>
+          <p class="card-text">Curso de inglês em RP, fiz 3 anos adquirindo experiências e momentos únicos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: rgb(77, 77, 77); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
+        <img src="img/512x512bb.jpg" class="card-img-top" alt="Ohmori" style="border: 2px solid yellow; width: 30%;">
+        <div class="card-body" style="padding: 0.5rem;">
+          <h5 class="card-title">Ohmori</h5>
+          <p class="card-text">Curso preparatório para vestibulinho e vestibular (Fuvest, ENEM, etc.).</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card" style="background-color: rgb(65, 65, 65); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
-      <img src="..." class="card-img-top" alt="..." style="border: 2px solid yellow;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card" style="background-color: rgb(58, 57, 57); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
-      <img src="..." class="card-img-top" alt="..." style="border: 2px solid yellow;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card" style="background-color: rgb(77, 76, 76); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
-      <img src="..." class="card-img-top" alt="..." style="border: 2px solid yellow;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card" style="background-color: rgb(77, 77, 77); color: rgb(238, 196, 9); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);">
-      <img src="..." class="card-img-top" alt="..." style="border: 2px solid yellow;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
+
+<div class="container text-center my-4">
+  <h1 class="titulo-capacidades">Minhas Capacidades</h1>
+</div>
+
+<style>
+  .titulo-capacidades {
+    font-size: 3rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: gold; /* Cor dourada */
+    text-shadow: 2px 2px 0 black, 4px 4px 0 white; /* Sombra do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    border: 4px solid gold; /* Borda dourada */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: black; /* Fundo preto */
+    display: inline-block; /* Para ajustar a borda ao texto */
+  }
+</style>
+
+<div class="container">
+  <div class="capabilities-card">
+    <p class="text-center">Estou constantemente aprimorando minhas habilidades nas seguintes áreas:</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">🌐 <strong>HTML:</strong> Domínio na estruturação de páginas web.</li>
+      <li class="list-group-item">💻 <strong>JavaScript:</strong> Habilidade em criar interatividade e funcionalidades dinâmicas.</li>
+      <li class="list-group-item">🎨 <strong>CSS:</strong> Experiência em estilização e design responsivo.</li>
+      <li class="list-group-item">🖌️ <strong>Arte Digital:</strong> Criação de ilustrações e design gráfico.</li>
+    </ul>
   </div>
 </div>
 
+<style>
+  .capabilities-card {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: black; /* Fundo preto */
+    color: rgb(238, 196, 9); /* Texto dourado */
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados */
+    border: 4px solid gold; /* Borda dourada */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Sombra */
+  }
+
+  .titulo-capacidades {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: gold; /* Cor dourada */
+    text-shadow: 2px 2px 0 black, 4px 4px 0 white; /* Sombra do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    border: 4px solid gold; /* Borda dourada */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    display: inline-block; /* Para ajustar a borda ao texto */
+  }
+</style>
+
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-<script src="js/bootstrap.js"></script>
-  </body>
+</body>
 </html>
