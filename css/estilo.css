@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+.navbar{
+    background-color: rgba(218, 218, 218, 0.336) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0.75;
+}
+
+h5{
+    color: azure;
+}
+
+img{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 35% ;
+    max-height: 35% ;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 200px; /* Ajuste o valor conforme necessário */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 20; /* Remove o espaçamento no último item, se desejar */
+}
+h1{
+    color: darkorange;
+    display: flex;
+    justify-content: center;
+}
